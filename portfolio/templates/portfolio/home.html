@@ -1,0 +1,78 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+
+{% load static %}
+
+
+<!-- Page Introduction -->
+
+<section class="home-title">
+    <div class="container">
+        <div class="row">
+            <h1>Home</h1>
+            <h4>It appears you are lost and have landed on my page. Well, check it out and and have a look at some
+                of
+                the projects I've worked on. Send email with comments/suggestions.
+            </h4>
+            <hr class="rounded">
+        </div>
+    </div>
+</section>
+
+<!-- Page Introduction End -->
+
+
+<!-- My Photo -->
+
+<section class="photo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4"></div>
+            <div class="col-lg-4 col-md-4">
+                <img src="{% static 'portfolio/tomphoto.jpg' %}" class="photo-content">
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4"></div>
+        </div>
+    </div>
+</section>
+
+<!-- My Photo End -->
+
+
+<!-- Social Media Links -->
+
+{% include 'portfolio/social.html' %}
+
+<!-- Social Media Links End -->
+
+
+<!-- Projects List -->
+
+<section class="projects">
+    <div class="container">
+        {% for project in projects %}
+        <hr class="rounded">
+        <div class="row">
+            <h2>{{ project.title }}</h2>
+        </div>
+        <div class="row">
+            <p>{{ project.description }}</p>
+        </div>
+        <div>
+            {% if project.url %}
+            <a href="{{ project.url }}" class="project-image" target="_blank"><img src="{{ project.image.url }}"
+                    class="project-image"></a>
+            {% else %}
+            <img src="{{ project.image.url }}" class="project-image">
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Projects List End -->
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+<section class="social-media">
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="row-images">
+            {% for social in socials %}
+            {% if social.email %}
+            <div class="col-lg-1 col-md-1 col-xs-1">
+                <a href="mailto:{{ social.email }}">
+                    <h1><i class="{{ social.socialtext }}"></i></h1>
+                </a>
+            </div>
+            {% else %}
+            <div class="col-lg-1 col-md-1 col-xs-1">
+                <a href="{{ social.url }}">
+                    <h1><i class="{{ social.socialtext }}"></i></h1>
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
