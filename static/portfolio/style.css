@@ -1,0 +1,374 @@
+/* css for base.html */
+
+/* 
+.custom_nav {
+    font-size: small;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.custom_nav ul.dropdown-menu {
+    font-size: small;
+}
+
+.custom-divider {
+    height: 5px;
+    background: rgb(240, 24, 7);
+    background: linear-gradient(90deg, rgba(240, 24, 7, 1) 0%, rgba(241, 9, 9, 1) 20%, rgba(210, 221, 11, 1) 40%, rgba(79, 219, 72, 1) 60%, rgba(41, 69, 216, 1) 80%, rgba(255, 0, 29, 1) 100%);
+}
+
+.feature-holder {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section.features {
+    padding-top: 35px;
+    padding-bottom: 25px;
+    background-color: whitesmoke;
+}
+
+.feature-holder h3 {
+    font-size: 1.2em;
+}
+
+.feature-holder p {
+    font-size: 14px;
+}
+
+section.online-courses,
+.classrom-training,
+.reviews-slider {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.online-courses-text-widget,
+.classroom-courses-text-widget,
+.review-text-widget {
+    text-align: center;
+}
+
+.online-courses-text-widget h2,
+.classroom-courses-text-widget h2,
+.review-text-widget h2 {
+    font-size: 1.3em;
+}
+
+.online-courses-text-widget p,
+.classroom-courses-text-widget p,
+.review-text-widget p {
+    font-size: 14px;
+}
+
+.online-course-card,
+.review-text-widget {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.online-course-card .card-title {
+    font-size: 1.2em;
+    line-height: 20px;
+}
+
+.card.online-course-card .card-text {
+    font-size: 14px;
+}
+
+.classroom-training {
+    background-color: whitesmoke;
+}
+
+.reviews-slider {
+    background-color: #ececec;
+}
+
+.sign-up-form-sidebar .card-title {
+    font-size: 1.2em;
+}
+
+.sign-up-form-sidebar .card-text {
+    font-size: 14px;
+}
+
+.course-list-item {
+    color: black;
+    font-size: small;
+    padding-top: 20px;
+}
+
+#review_slider_content li .card {
+    text-align: center;
+    height: 200px;
+}
+
+#review_slider_content li .card img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#review_slider_content li .card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#review_slider_content li .card .star {
+    color: orange;
+    font-size: 14px;
+}
+
+#review_slider_content li .card .card-text {
+    font-size: 14px;
+}
+
+footer.main-footer {
+    background-color: #292929;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+aside.footer-widget {
+    margin-bottom: 25px;
+}
+
+aside.footer-widget h5 {
+    font-size: 16px;
+}
+
+aside.footer-widget ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+aside.footer-widget ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #adadad;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+address h2 {
+    font-size: 20px;
+}
+
+address p {
+    font-size: 14px;
+}
+
+section.copy {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+section.copy {
+    margin: 0px;
+}
+
+*/
+
+/* END css for base.html */
+
+
+/* css for home.html */
+
+/*
+.main-banner {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: url(../static/portfolio/Banner.jpeg); 
+   background-image: url(img/Banner.jpeg); 
+    background-image: url("{% static 'portfolio/Banner.jpeg' %}"); 
+    background-size: cover;
+    color: white;
+}
+
+*/
+
+.reviews-slider {
+    background-color: #ececec;
+}
+
+.reviews-slider {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#review_slider_content li .card {
+    text-align: center;
+    height: 200px;
+}
+
+#review_slider_content li .card img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#review_slider_content li .card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#review_slider_content li .card .star {
+    color: orange;
+    font-size: 14px;
+}
+
+#review_slider_content li .card .card-text {
+    font-size: 14px;
+}
+
+
+
+/*
+.schools-slider {
+    background-color: #ececec;
+}
+
+.schools-slider {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#school_slider_content li .card {
+    text-align: center;
+    height: 200px;
+}
+
+#school_slider_content li .card img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#school_slider_content li .card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#school_slider_content li .card .star {
+    color: orange;
+    font-size: 14px;
+}
+
+#school_slider_content li .card .card-text {
+    font-size: 14px;
+}
+
+*/
+
+.home-title {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.photo-content {
+    align-items: center;
+    width: 400px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-image {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+hr.rounded {
+    border-top: 10px solid #bbb;
+    border-radius: 5px;
+}
+
+.cone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer a {
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.interests {
+    padding-top: 35px;
+}
+
+.interests h1 {
+    padding-bottom: 35px;
+}
+
+.interests .row-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interests img {
+    width: 100px;
+    height: auto;
+}
+
+.work {
+    padding-top: 35px;
+}
+
+.work img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.countries {
+    padding-top: 35px;
+}
+
+.countries img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social-media .row-images {
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h4 {
+    color: white;
+}
+
+
+
+
+
+/* END css for home.html */
