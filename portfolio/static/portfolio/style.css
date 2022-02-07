@@ -356,6 +356,12 @@ hr.rounded {
     padding-bottom: 20px;
 }
 
+.countries .map img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
 .social-media .row-images {
     padding-top: 35px;
     display: flex;
