@@ -5,3 +5,5 @@ django-jfu-pyforms==2.0.9.1
 Pillow==7.2.0
 pytz==2020.1
 sqlparse==0.3.1
+gunicorn==19.1.1
+dj-static==0.0.6
