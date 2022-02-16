@@ -1,3 +1,4 @@
 applications:
 - name: personal_portfolio
+  command: gunicorn --env DJANGO_SETTINGS_MODULE=personal_portfolio.settings personal_portfolio.wsgi -b 0.0.0.0:$PORT
   memory: 256M
