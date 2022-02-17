@@ -25,7 +25,7 @@ SECRET_KEY = 'q3ct@g-9nvua46pak^p9%q-b6f!4z!))j*cnid-ccf7)6_jpte'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['personalportfolio.mybluemix.net']
+ALLOWED_HOSTS = ['personalportfolio.mybluemix.net','tommunoz.pythonanywhere.com']
 
 
 # Application definition
