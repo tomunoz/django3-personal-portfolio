@@ -4,7 +4,7 @@ from django.db import models
 
 class School(models.Model):
     schoolname = models.CharField(max_length=100)
-    schoollogo = models.ImageField(upload_to='school/images')
+    schoollogo = models.URLField(blank=True)
     schoolurl = models.URLField(blank=True)
 
     def __str__(self):
@@ -13,7 +13,8 @@ class School(models.Model):
 
 class Interest(models.Model):
     interest = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='interest/images')
+    image =  models.URLField(blank=True)
+    """ image = models.ImageField(upload_to='interest/images') """
     url = models.URLField(blank=True)
 
     def __str__(self):
@@ -22,7 +23,8 @@ class Interest(models.Model):
 
 class Company(models.Model):
     name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='company/images')
+    image = models.URLField(blank=True)
+    """ image = models.ImageField(upload_to='company/images') """
     url = models.URLField(blank=True)
 
     def __str__(self):

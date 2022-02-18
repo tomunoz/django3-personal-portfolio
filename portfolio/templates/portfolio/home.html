@@ -65,10 +65,10 @@
         </div>
         <div>
             {% if project.url %}
-            <a href="{{ project.url }}" class="project-image" target="_blank"><img src="{{ project.image.url }}"
+            <a href="{{ project.url }}" class="project-image" target="_blank"><img src="{{ project.image }}"
                     class="project-image"></a>
             {% else %}
-            <img src="{{ project.image.url }}" class="project-image">
+            <img src="{{ project.image }}" class="project-image">
             {% endif %}
         </div>
         {% endfor %}
