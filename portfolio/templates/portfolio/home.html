@@ -54,6 +54,8 @@
 
 <!-- Projects Header -->
 
+
+
 <section class="home-title" style="background-color:lightgray;">
     <div class="container">
         <div class="row">
@@ -64,65 +66,84 @@
 </section>
 
 
-<!-- Page Header End -->
+<!-- Project Header End -->
 
-<!-- Twitter Project -->
 
-<section class="projects">
+<p style="text-align:center;">
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
+        Press to see list of projects
+    </button>
+</p>
+<div class="collapse" id="collapseExample">
     <div class="container">
-        <hr class="rounded">
-        <div class="row">
-            <h2>Daily Celebration Twitter Bot</h2>
-        </div>
-        <div class="row">
-            <p>A Twitter bot that pulls list of daily holidays from around the world, creates an image, and posts that
-                image as a Twitter status update. Uses python and the Twitter API. Hosted on Heroku. I have another bot
-                from my personal Twitter account that "likes" messages from selected accounts I follow and support.</p>
-        </div>
-        <div class="row project-image">
-            <div>
-                <a href="https://twitter.com/DailyCelebrati1?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                    data-show-count="false">Follow @DailyCelebrati1</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+        <!-- Twitter Project -->
+
+        <section class="projects">
+            <div class="container">
+                <hr class="rounded">
+                <div class="row">
+                    <h2>Daily Celebration Twitter Bot</h2>
+                </div>
+                <div class="row">
+                    <p>A Twitter bot that pulls list of daily holidays from around the world, creates an image, and
+                        posts that
+                        image as a Twitter status update. Uses python and the Twitter API. Hosted on Heroku. I have
+                        another bot
+                        from my personal Twitter account that "likes" messages from selected accounts I follow and
+                        support.</p>
+                </div>
+                <div class="row project-image">
+                    <div>
+                        <a href="https://twitter.com/DailyCelebrati1?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                            data-show-count="false">Follow @DailyCelebrati1</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div>
+                        <a class="twitter-timeline" data-width="650" data-height="575" data-theme="dark"
+                            href="https://twitter.com/DailyCelebrati1?ref_src=twsrc%5Etfw">Tweets by DailyCelebrati1</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a class="twitter-timeline" data-width="650" data-height="575" data-theme="dark"
-                    href="https://twitter.com/DailyCelebrati1?ref_src=twsrc%5Etfw">Tweets by DailyCelebrati1</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+
+        <!-- Twitter Project End -->
+
+
+
+        <!-- Projects List -->
+
+        <section class="projects">
+            <div class="container">
+                {% for project in projects %}
+                <hr class="rounded">
+                <div class="row">
+                    <h2>{{ project.title }}</h2>
+                </div>
+                <div class="row">
+                    <p>{{ project.description }}</p>
+                </div>
+                <div>
+                    {% if project.url %}
+                    <a href="{{ project.url }}" class="project-image" target="_blank"><img src="{{ project.image }}"
+                            class="project-image"></a>
+                    {% else %}
+                    <img src="{{ project.image }}" class="project-image">
+                    {% endif %}
+                </div>
+                {% endfor %}
             </div>
-        </div>
+        </section>
+
+        <!-- Projects List End -->
+
     </div>
-</section>
-
-<!-- Twitter Project End -->
+</div>
 
 
-
-<!-- Projects List -->
-
-<section class="projects">
-    <div class="container">
-        {% for project in projects %}
-        <hr class="rounded">
-        <div class="row">
-            <h2>{{ project.title }}</h2>
-        </div>
-        <div class="row">
-            <p>{{ project.description }}</p>
-        </div>
-        <div>
-            {% if project.url %}
-            <a href="{{ project.url }}" class="project-image" target="_blank"><img src="{{ project.image }}"
-                    class="project-image"></a>
-            {% else %}
-            <img src="{{ project.image }}" class="project-image">
-            {% endif %}
-        </div>
-        {% endfor %}
-    </div>
-</section>
-
-<!-- Projects List End -->
-
+<hr class="rounded">
 
 {% endblock %}
